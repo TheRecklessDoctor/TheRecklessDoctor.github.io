@@ -18,6 +18,8 @@
     </div>
     <div id="scatter_2022">
     </div>
+    <div id="GR_bar">
+    </div>
 
     <script type="text/javascript">
 
@@ -35,6 +37,12 @@
 
         var vg_3 = "js/scatterPlot_2022.vg.json";
         vegaEmbed("#scatter_2022", vg_3).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_4 = "js/GR_top10.vg.json";
+        vegaEmbed("#GR_bar", vg_4).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
