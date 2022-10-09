@@ -14,7 +14,9 @@
     <h1>First vega-lite graph</h1>
     <div id="map">
     </div>
-    <div id="scatter">
+    <div id="scatter_1970">
+    </div>
+    <div id="scatter_2022">
     </div>
 
     <script type="text/javascript">
@@ -26,7 +28,13 @@
         }).catch(console.error);
 
         var vg_2 = "js/scatterPlot_1970.vg.json";
-        vegaEmbed("#scatter", vg_2).then(function(result) {
+        vegaEmbed("#scatter_1970", vg_2).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_3 = "js/scatterPlot_2022.vg.json";
+        vegaEmbed("#scatter_2022", vg_3).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
