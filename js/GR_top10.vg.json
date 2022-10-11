@@ -17,8 +17,11 @@
         "aggregate": "mean",
         "title": "population",
         "scale": {"type": "linear"}
-  
       },
+      "tooltip":[
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {"field": "Growth Rate", "type": "quantitative"}
+      ],
       "color": {
         "field": "Continent",
         "type": "nominal"
