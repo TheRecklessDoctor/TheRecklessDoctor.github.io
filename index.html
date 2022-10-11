@@ -20,6 +20,8 @@
     </div>
     <div id="GR_bar">
     </div>
+    <div id="donutChart">
+    </div>
 
     <script type="text/javascript">
 
@@ -43,6 +45,12 @@
 
         var vg_4 = "js/GR_top10.vg.json";
         vegaEmbed("#GR_bar", vg_4).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_5 = "js/donut_chart.vg.json";
+        vegaEmbed("#donutChart", vg_5).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
