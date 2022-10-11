@@ -9,19 +9,40 @@
     
     <!-- CSS file -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <!-- meta tag for viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>First vega-lite graph</h1>
-    <div id="map">
+    <div id="title" class = "pure-g">
+        <h1 id="Main_title" class = "pure-u-1-1">
+            First vega-lite graph
+        </h1>
     </div>
-    <div id="scatter_1970">
+
+    <div id="main_content">
+        <div class = "pure-g">
+            <p id="Intro" class="pure-u-1-1">
+                This is an analysis and visualization of data relating to population changes around the globe. The data ranges over a 
+                52 year span starting from 1970 to 2022. Various charts have been used to see how human populations changed, based on the continents.
+            </p>
+        </div>
+        
+        <div class="pure-g">
+            <div id="map" class="pure-u-1-1"></div>
+        </div>
+        <div id="scatter_1970">
+        </div>
+        <div id="scatter_2022">
+        </div>
+        <div id="GR_bar">
+        </div>
+        <div id="donutChart">
+        </div>
+        <div id="LineChart">
+        </div>
     </div>
-    <div id="scatter_2022">
-    </div>
-    <div id="GR_bar">
-    </div>
-    <div id="donutChart">
-    </div>
+   
 
     <script type="text/javascript">
 
@@ -51,6 +72,12 @@
 
         var vg_5 = "js/donut_chart.vg.json";
         vegaEmbed("#donutChart", vg_5).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_6 = "js/LineChart.vg.json";
+        vegaEmbed("#LineChart", vg_6).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);

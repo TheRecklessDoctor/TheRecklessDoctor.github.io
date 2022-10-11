@@ -1,0 +1,11 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/lineChart.csv"},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Date", "type": "temporal"},
+      "y": {"field": "Value", "type": "quantitative"},
+      "color": {"field": "Continent", "type": "nominal"}
+    }
+  }

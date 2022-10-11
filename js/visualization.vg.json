@@ -23,13 +23,13 @@
         {
           "type": "formula",
           "expr": "datum[\"properties\"] && datum[\"properties\"][\"NAME\"]",
-          "as": "properties.NAME"
+          "as": "properties.ISO_A3_EH"
         },
         {
           "type": "lookup",
           "from": "source_1",
-          "key": "Country",
-          "fields": ["properties.NAME"],
+          "key": "Country_code",
+          "fields": ["properties.ISO_A3_EH"],
           "values": ["2022 Population"]
         },
         {
