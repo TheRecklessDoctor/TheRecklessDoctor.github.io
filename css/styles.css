@@ -1,3 +1,50 @@
+body{
+    background-color: #FFEFD8;
+}
+
+
 #Main_title, #Intro{
     text-align: center;
+}
+
+#map{
+    padding-left: 160px;
+    padding-top: 30px;
+}
+
+/* #scatter_1970, #scatter_2022{
+    padding-left: 120px;
+}
+
+#scatter_description{
+    width:400px;
+    margin:15px;
+} */
+
+#scatter_container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#row_4_wrapper,#row5_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#row_4_Textwrapper{
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+
+#LineChart{
+    padding-left: 60px;
+}
+
+#bar_chart_wrapper,#map_main,#scatter_container,#row5_wrapper{
+    padding-bottom: 40px;
+    padding-top:40px;
 }

@@ -4,12 +4,20 @@
     "data": {"url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/lineChart.csv"},
     "mark": "line",
     "encoding": {
-      "x": {"field": "Date", "type": "temporal"},
-      "y": {"field": "Value", "type": "quantitative"},
+      "x": {"field": "Date", "type": "temporal","axis": {"grid": false}},
+      "y": {"field": "Value", "type": "quantitative","axis": {"grid": false}},
       "color": {"field": "Continent", "type": "nominal"},
       "tooltip":[
         {"field": "Continent", "type": "nominal", "title": "Continent"},
         {"field": "Value", "type": "quantitative"}
       ]
+    },
+    "config": {
+      "background":"#FFEFD8",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
     }
   }

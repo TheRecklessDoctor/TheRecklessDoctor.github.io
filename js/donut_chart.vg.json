@@ -1,17 +1,27 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":"Increase in population per continent from 1970 to 2022",
     "description": "A simple donut chart with embedded data.",
     "data": {
       "url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/change.csv"
     },
-    "mark": {"type": "arc", "innerRadius": 50},
-    "encoding": {
-      "theta": { "aggregate":"mean","field": "change2022_1970", "type": "quantitative"},
-      "color": {"field": "Continent", "type": "nominal"},
-      "tooltip":[
-        {"field": "Continent", "type": "nominal", "title": "Continent"},
-        {"aggregate":"mean","field": "change2022_1970", "type": "quantitative"}
-      ]
-    }
+        "mark": {"type": "arc", "innerRadius": 50},
+        "encoding": {
+          "theta": { "aggregate":"mean","field": "change2022_1970", "type": "quantitative"},
+          "color": {"field": "Continent", "type": "nominal"},
+          "tooltip":[
+            {"field": "Continent", "type": "nominal", "title": "Continent"},
+            {"aggregate":"mean","field": "change2022_1970", "type": "quantitative"}
+          ]
+        },
+        "config": {
+          "background":"#FFEFD8",
+          "style": {
+            "cell": {
+              "stroke": "transparent"
+            }
+          }
+        }
+      
+    
+    
   }

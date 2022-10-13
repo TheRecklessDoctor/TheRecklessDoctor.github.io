@@ -44,11 +44,7 @@
       }},
       "layer":[
         { 
-          "mark": "point",
-        "tooltip": [
-            {"field": "Country", "type": "nominal"},
-            {"field": "Growth Rate", "type": "quantitative", "format": ","}
-  ]
+          "mark": "point"
   },
   {
       "mark": {
@@ -75,7 +71,14 @@
           ]
           }
 }
-      ]
+      ],
+      "config": {
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      }
       
     
   }

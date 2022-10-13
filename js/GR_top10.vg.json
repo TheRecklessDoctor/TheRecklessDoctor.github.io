@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A bar chart showing the US population distribution of age groups in 2000.",
+    "title":"Top 10 countries with highest population growth rate in 2022.",
     "height": {"step": 17},
      "width" :600,
     "data": { "url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/Top10Growth_Rate.csv"},
@@ -10,13 +10,15 @@
     "encoding": {
       "y": {
         "field": "Country",
-        "sort" :"-x"
+        "sort" :"-x",
+        "axis": {"grid": false}
       },
       "x": {
         "field": "Growth Rate",
         "aggregate": "mean",
         "title": "population",
         "scale": {"type": "linear"}
+        ,"axis": {"grid": false}
       },
       "tooltip":[
         {"field": "Country", "type": "nominal", "title": "Country"},
@@ -25,6 +27,14 @@
       "color": {
         "field": "Continent",
         "type": "nominal"
+      }
+    },
+    "config": {
+      "background":"#FFEFD8",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
       }
     }
   }
