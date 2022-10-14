@@ -16,7 +16,7 @@
 <body>
     <div id="title" class = "pure-g">
         <h1 id="Main_title" class = "pure-u-1-1">
-            First vega-lite graph
+            Global Population Statistics
         </h1>
     </div>
 
@@ -32,16 +32,27 @@
             <div id="map" class="pure-u-1-1"></div>
         </div>
         <div class="pure-g" id="scatter_container">
-            <div id="scatter_1970" class="pure-u-1-2"></div>
-            <p class="pure-u-1-2" id="scatter_description">
-                The two scatter plots show how populations changed over 52 years starting from 1970 and ending in 2022. The filters also allow
-                you to view how each continent's population changed 
-
+            <div id="scatter_1970" class="pure-u-1-2 scatter"></div>
+            <p class="scatter pure-u-1-2 scatter_desc">
+                This shows what the population was like around the world in the year 1970.
             </p>
         </div>
+        
+        <div class="pure-g" id="scatter_container2">
+            <div id="scatter_2022" class="pure-u-1-2 scatter"></div>
+            <p class="scatter pure-u-1-2 scatter_desc">
+                This shows what the population was like around the world in the year 2022.
+            </p>
+        </div>
+
+        <div id="barChart_description">
+            <p >The bar chart shows the top 10 countries ranked by their growth rate and colors them by their respective continent.</p>
+        </div>
+
         <div class="pure-g" id="bar_chart_wrapper">
             <div id="GR_bar" class="pure-u-1-1"></div>
         </div>
+
         <div class="pure-g" id="row_4_wrapper">
             <div class="pure-u-1-2" id="row_4_Textwrapper">
                 <h3>Average change in populations from 1970-2022.</h3>
@@ -70,6 +81,12 @@
 
         var vg_2 = "js/scatterPlot_1970.vg.json";
         vegaEmbed("#scatter_1970", vg_2).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_2 = "js/scatterPlot_2022.vg.json";
+        vegaEmbed("#scatter_2022", vg_2).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);

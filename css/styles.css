@@ -12,22 +12,6 @@ body{
     padding-top: 30px;
 }
 
-/* #scatter_1970, #scatter_2022{
-    padding-left: 120px;
-}
-
-#scatter_description{
-    width:400px;
-    margin:15px;
-} */
-
-#scatter_container{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
-}
 #row_4_wrapper,#row5_wrapper{
     display: flex;
     justify-content: space-between;
@@ -44,7 +28,34 @@ body{
     padding-left: 60px;
 }
 
-#bar_chart_wrapper,#map_main,#scatter_container,#row5_wrapper{
+#bar_chart_wrapper,#map_main,#row5_wrapper,#scatter_container,#scatter_container2,#barChart_description{
     padding-bottom: 40px;
-    padding-top:40px;
+    padding-top: 40px;
+}
+
+#scatter_container,#scatter_container2,#Intro{
+    padding-left: 40px;
+}
+
+#Intro{
+    padding-right:40px;
+}
+
+#barChart_description{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#bar_chart_wrapper{
+    padding-left: 40px;
+}
+
+#scatter_desc{
+    font-size: large;
+    font-weight: bold;
 }
