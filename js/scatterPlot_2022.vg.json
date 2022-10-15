@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
-    "width":450,
+    "width":600,
+    "height":350,
     "data": {
       "url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/world_population.csv"
       },

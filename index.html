@@ -24,24 +24,37 @@
         <div class = "pure-g">
             <p id="Intro" class="pure-u-1-1">
                 This is an analysis and visualization of data relating to population changes around the globe. The data ranges over a 
-                52 year span starting from 1970 to 2022. Various charts have been used to see how human populations changed, based on the continents.
+                52 year span starting from <b>1970</b> to <b>2022</b>. Various charts have been used to see how human populations changed, based on the continents.
+                First, let us look at how the world population looked like in the year 1970. One look tells us two major things, that the developed world
+                was still suffering the effects of the world wars and the mass migration of the late 20th and 21st centuries had not yet begun.
             </p>
         </div>
-        
+
+        <div class="pure-g" id="map_main_1970">
+            <div id="map_1970" class="pure-u-1-1"></div>
+        </div>
+
+        <div class="pure-g">
+            <p id="map_desc_1970" class="pure-u-1-1">
+                As explained above, we can see the clear contrasts between the world in 1970 vs the world in 2022, countries like Russia have
+                more or less recovered from the devastating 20th century and the South Asian regions have begun to expand rapidly in population terms.
+            </p>
+        </div>
+
         <div class="pure-g" id="map_main">
             <div id="map" class="pure-u-1-1"></div>
         </div>
         <div class="pure-g" id="scatter_container">
             <div id="scatter_1970" class="pure-u-1-2 scatter"></div>
             <p class="scatter pure-u-1-2 scatter_desc">
-                This shows what the population was like around the world in the year 1970.
+               Now we take a look at each continent and some of their major cities in a bit more detail. First 1970.
             </p>
         </div>
         
         <div class="pure-g" id="scatter_container2">
             <div id="scatter_2022" class="pure-u-1-2 scatter"></div>
             <p class="scatter pure-u-1-2 scatter_desc">
-                This shows what the population was like around the world in the year 2022.
+                And now 2022.
             </p>
         </div>
 
@@ -54,10 +67,11 @@
         </div>
 
         <div class="pure-g" id="row_4_wrapper">
+            <div id="barChartOverlay" class="pure-u-1-2"></div>
+            
             <div class="pure-u-1-2" id="row_4_Textwrapper">
                 <h3>Average change in populations from 1970-2022.</h3>
             </div>
-            <div id="donutChart" class="pure-u-1-2"></div>
         </div>
 
         <div class="pure-g" id="row5_wrapper">
@@ -97,14 +111,20 @@
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
-        var vg_5 = "js/donut_chart.vg.json";
-        vegaEmbed("#donutChart", vg_5).then(function(result) {
+        var vg_5 = "js/BarChartOverlay.vg.json";
+        vegaEmbed("#barChartOverlay", vg_5).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var vg_6 = "js/LineChart.vg.json";
         vegaEmbed("#LineChart", vg_6).then(function(result) {
+        // Access the Vega view instance
+        // (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_7 = "js/1970Map.vg.json";
+        vegaEmbed("#map_1970", vg_7).then(function(result) {
         // Access the Vega view instance
         // (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
