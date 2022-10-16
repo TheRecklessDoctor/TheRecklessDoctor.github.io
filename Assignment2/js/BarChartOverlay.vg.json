@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": {"step": 30},
+  "data": {"url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/change.csv"},
+  "encoding": {
+    "y": {
+      "field": "Continent",
+      "type": "nominal",
+      "axis": {"grid": false}
+    }
+  },
+  "layer": [{
+    "mark": {"type": "bar", "color": "#ddd"},
+    "encoding": {
+      "x": {
+        "aggregate": "mean",
+        "field": "change2022_1970",
+        "title": "Mean change in population from 1970 to 2022",
+        "axis": {"grid": false}
+      }
+    }
+  }, {
+    "mark": {"type": "text", "align": "left", "x": 5},
+    "encoding": {
+      "text": {"field": "Continent"}
+    }
+  }],
+  
+    "config": {
+      "background":"#FFEFD8",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    }
+}

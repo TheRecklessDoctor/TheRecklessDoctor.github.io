@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/TheRecklessDoctor/TheRecklessDoctor.github.io/master/data/world_population.csv"
+    },
+    "params": [
+   {
+    "name": "Continent_selection",
+    "bind": {
+    "input": "select",
+    "options": [
+               null,
+              "North America",
+              "South America",
+              "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+                ],
+                "labels":[
+                "Show All",
+                "North America",
+                "South America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+                ],
+                "name": "Continent Selection: "
+                }
+                }
+                ],
+    
+ "transform": [
+{
+"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
+
+],
+
+  "encoding": {
+    "x": {"field": "Density (per km²)", "type": "quantitative","scale": {"type": "log"}},
+    "y": {"field": "1970 Population", "type": "quantitative","scale": {"type": "log"}
+    }},
+    "layer":[
+      { 
+        "mark": "point",
+      "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Growth Rate", "type": "quantitative", "format": ","}
+]
+},
+{
+    "mark": {
+    "type": "text",
+    "align": "right",
+    "baseline": "middle",
+    "dx": -12,
+    "fontSize": 11.5,
+    "fontStyle": "italic"
+    },
+    "encoding": {
+      "text": {"field": "Country", "type": "nominal"},
+      "color": {"value": "black"},
+      "opacity": {
+      "condition": {
+      "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' || datum['Country'] == 'United States'",
+      "value": 1
+      },
+      "value": 0
+      },
+        "tooltip": [
+         {"field": "Country", "type": "nominal"},
+          {"field": "Growth Rate", "type": "quantitative", "format": ","}
+        ]
+        }
+}
+    ]
+    
+  
+}
