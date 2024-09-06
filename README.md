@@ -33,6 +33,7 @@ When you are initially working your website, it is very useful to be able to pre
     brew install node
     gem install bundler
     ```
+1. On MacOS, ensure that the system doesn't use the default ruby version. Use `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc` followed by `source ~/.zshrc` to ensure that the latest version of ruby installed is used.  
 1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
 
