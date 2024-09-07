@@ -8,38 +8,34 @@ redirect_from:
 ---
 
 {% include base_path %}
+[PDF version](/files/Resume.pdf)
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* <b>Master of Artificial Intelligence</b>(Research stream), Monash University, 2024(expected)
+* <b>B.S. in Computer Science</b>, Monash University, 2023, Cumulative GPA: 3.7/4.0
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Fall 2022: Software Developer Intern
+  * ProximaX
+  * Duties includes: Implementation of novel features for Sirius chain in the mobile application.
+  * Tools used: Typescript, Ionic, Angular, Git
+ 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+   * Pytorch
+   * Tensorflow
+   * Numpy
+   * Pandas
+   * Matplotlib, Seaborn
+* Artifical Intelligence
+  * Computer vision
+  * Machine learning
+  * Deep learning
+* Javascript, Typescript
+* Git
 
 Publications
 ======
@@ -47,11 +43,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
 Teaching
 ======
@@ -59,6 +50,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
