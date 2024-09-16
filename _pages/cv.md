@@ -17,11 +17,15 @@ Education
 
 Work experience
 ======
-* Fall 2022: Software Developer Intern
+* <b>Nov 2022 - Feb 2023</b>: Software Developer Intern
   * ProximaX
   * Duties includes: Implementation of novel features for Sirius chain in the mobile application.
   * Tools used: Typescript, Ionic, Angular, Git
- 
+* <b>July 2024 - Ongoing</b>: Research Intern Under Dr Arghya Pal
+  * Monash University Malaysia
+  * Duties includes: Reading and summarising papers for literature review, construction of a novel dataset for mixed-language audio, writing code for experiementation and assistance with writing paper.
+  * Contributions: A paper as second-author which is under review at ICASSP 2025
+
 Skills
 ======
 * Python
