@@ -1,7 +1,11 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Over The Wire: Bandit"
+excerpt: "Solutions to Over The Wire war games Bandit stage."
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This contains the solutions to the Bandit stage of Over The Wire. It deals with the usage of linux and Bash in preparation for cybersecurity and pentesting. The reason I am doing this is to learn Linux and Bash to an intermediate level and hopefully learn a bit of practical cybersecurity to round up my skillset. Also I want to learn to hack purely for interest too lol hahahah.
+
+The solutions will be posted on github and the link is posted here.
+
+Link to Github repo: https://github.com/TheRecklessDoctor/OverTheWire-Solutions 
