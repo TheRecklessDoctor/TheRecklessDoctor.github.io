@@ -12,7 +12,8 @@ redirect_from:
 
 Education
 ======
-* <b>Master of Artificial Intelligence</b>(Research stream), Monash University, 2024(expected)
+* <b>Doctor of Philosophy</b>, Monash University 2028
+* <b>Master of Artificial Intelligence</b>(Research stream), Monash University, 2024, Cumulative GPA: 3.5/4.0
 * <b>B.S. in Computer Science</b>, Monash University, 2023, Cumulative GPA: 3.7/4.0
 
 Work experience
